@@ -1,0 +1,27 @@
+	section .icon
+
+	jp	___prgm_init
+	db	$01
+	public ___icon
+___icon:
+	db	$10, $10
+	db	$BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE
+	db	$BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE
+	db	$BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE
+	db	$BE, $BE, $BE, $BE, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $BE, $BE
+	db	$BE, $BE, $BE, $BC, $BC, $DD, $DE, $DD, $DD, $DD, $DD, $DD, $BC, $BC, $BE, $BE
+	db	$BE, $BE, $BC, $BC, $DD, $DE, $DD, $DD, $DD, $DD, $DD, $BC, $DD, $BC, $BE, $BE
+	db	$BE, $BE, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $DD, $BC, $BE, $BE
+	db	$BE, $BE, $BC, $BC, $DD, $DD, $DD, $DD, $DD, $BC, $BC, $DD, $DD, $BC, $BE, $BE
+	db	$BE, $BE, $BC, $DD, $DD, $DD, $DD, $DD, $DD, $DD, $BC, $DD, $DD, $BC, $BE, $BE
+	db	$BE, $BE, $BC, $DD, $DD, $DD, $DD, $DD, $DD, $DD, $BC, $DD, $DD, $BC, $BE, $BE
+	db	$BE, $BE, $BC, $DD, $DE, $DE, $DD, $DD, $DD, $DD, $BC, $DD, $DD, $BC, $BE, $BE
+	db	$BE, $BE, $BC, $DD, $DD, $DE, $DD, $DD, $DD, $DD, $BC, $DD, $BC, $BC, $BE, $BE
+	db	$BE, $BE, $BC, $BC, $DD, $DD, $DD, $DD, $DD, $BC, $BC, $BC, $BC, $BE, $BE, $BE
+	db	$BE, $BE, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $BC, $BE, $BE, $BE, $BE
+	db	$BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE
+	db	$BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE, $BE
+	public ___description
+___description:
+	db	"Ian's Blockrush", 0
+___prgm_init:
