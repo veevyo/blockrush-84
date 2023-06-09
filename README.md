@@ -10,7 +10,7 @@ none (so far!)
 
 # plans for future updates
 - end screen
-- screen flashes red when enemy collision (or some other form of feedback
+- screen flashes red when enemy collision (or some other form of feedback)
 
 # attribution
 - everything here is made by me
