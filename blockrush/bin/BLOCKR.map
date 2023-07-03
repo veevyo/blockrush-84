@@ -7,9 +7,9 @@ Section          Base   Top    High   Length
 .init.reruncheck D1AA60 D1AA60             0h
 .init            D1AA60 D1AA87            27h
 .fini            D1AA87 D1AABB            34h
-.text            D1AABB D1B252           797h
-.data            D1B252 D1B26E            1Ch
-.rodata          D1B26E D1C7B0          1542h
+.text            D1AABB D1B2C2           807h
+.data            D1B2C2 D1B2DE            1Ch
+.rodata          D1B2DE D1C820          1542h
 .init_array      000000 000000             0h
 .ctors           000000 000000             0h
 .dtors           000000 000000             0h
@@ -44,19 +44,20 @@ __ftoul                     = 00027C
 __ltof                      = 000284
 __setflag                   = 000218
 __ultof                     = 000280
-_atomic_load_increasing_32  = D1ABD6
-_delay                      = D1ABFB
-_os_DisableHomeTextBuffer   = D1AC25
-_os_EnableHomeTextBuffer    = D1AC37
-_random                     = D1AC49
-_srandom                    = D1ACA0
-__state                     = D1B252
-___sleep_common.3           = D1ACB9
-_clock                      = D1ACD2
-.missingappvar              = D1B26E
-.libloadname                = D1B273
+__sand                      = D1ABD6
+_atomic_load_increasing_32  = D1ABDF
+_delay                      = D1AC04
+_os_DisableHomeTextBuffer   = D1AC2E
+_os_EnableHomeTextBuffer    = D1AC40
+_random                     = D1AC52
+_srandom                    = D1ACA9
+__state                     = D1B2C2
+___sleep_common.3           = D1ACC2
+_clock                      = D1ACDB
+.missingappvar              = D1B2DE
+.libloadname                = D1B2E3
 .libloadnamelen             = 000007
-.webaddress                 = D1B27B
+.webaddress                 = D1B2EB
 ___init_clock               = D1AA45
 __start                     = D1AA60
 ___exithl                   = D1AA87
@@ -65,20 +66,20 @@ skip.__Exit                 = D1AA87
 skip._abort                 = D1AA87
 _exit.sp                    = D1AA88
 _exit.flash_wait_states     = D1AA92
-_main                       = D1ACDD
-_itoa                       = D1AFC6
-_input                      = D1B0B1
-_moveDown                   = D1B132
-_collisionCheck             = D1B1B7
-_reverseString              = D1B217
-_test_font_data             = D1B290
-_test_font                  = D1B262
-_.str                       = D1C7A0
-_.str.1                     = D1C7A8
+_main                       = D1ACE6
+_itoa                       = D1B017
+_input                      = D1B109
+_moveDown                   = D1B198
+_collisionCheck             = D1B21D
+_reverseString              = D1B286
+_test_font_data             = D1B300
+_test_font                  = D1B2D2
+L_.str                      = D1C810
+L_.str.1                    = D1C818
 _moveDown.oldY              = D052C6
-_moveDown.oldX              = D1B265
-_input.oldY                 = D1B268
-_input.oldX                 = D1B26B
+_moveDown.oldX              = D1B2D5
+_input.oldY                 = D1B2D8
+_input.oldX                 = D1B2DB
 lib.LibLoad                 = D1A9F1
 _#fontlib_SetWindow         = D1AA06
 _#fontlib_SetCursorPosition = D1AA0A

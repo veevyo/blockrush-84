@@ -7,9 +7,10 @@
 #include <ti/screen.h>
 #include "fonts/fonts.h"
 
-#define BACKGROUND 190
+#define BACKGROUND 41
 #define ENEMY 124
 #define PLAYER 188
+#define HIT 242
 #define START_PLAYER_X 150
 #define START_PLAYER_Y 210
 #define START_ENEMY_X 50
@@ -61,8 +62,13 @@ int main(void)
         fontlib_SetColors(ENEMY, BACKGROUND);
         fontlib_DrawString("Score: ");
         fontlib_DrawString(itoa(score, buffer, 10));
-
+	
+	int collided = 0;
 	do {
+		if (collided == 1) {
+			gfx_FillScreen(BACKGROUND);
+			collided = 0;
+		}
 		fontlib_ClearWindow();
 		fontlib_SetCursorPosition(10, 10);
 		fontlib_DrawString("Lives: ");
@@ -72,7 +78,7 @@ int main(void)
 		fontlib_SetCursorPosition(250, 10);
 		fontlib_DrawString("Score: ");
 		fontlib_DrawString(itoa(score, buffer, 10));
-
+		
 		input(&p_x, &p_y, &playerTempX, &playerTempY);
                 gfx_SetColor(BACKGROUND);
                 gfx_FillRectangle(playerTempX, playerTempY, 20, 20);
@@ -87,10 +93,13 @@ int main(void)
 
 		if (collisionCheck(e_x, e_y, p_x, p_y)) {
 			lives--;
+			gfx_SetColor(HIT);
+			gfx_FillRectangle(0, 0, 320, 240);
 			gfx_SetColor(BACKGROUND);
 			gfx_FillRectangle(e_x, e_y, 30, 30);
 			e_x = randInt(0, 300);
 			e_y = 0;
+			collided = 1;
 		}
 
 
